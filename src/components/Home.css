@@ -1,0 +1,74 @@
+/* Container styles for the entire page */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0033cc; /* Predominant shade of blue */
+  position: relative;
+}
+
+/* Content box styling */
+.home-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Dropdown container */
+.client-info {
+  margin-bottom: 20px;
+}
+
+/* Dropdown label and selected client text */
+.client-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0033cc; /* Dark blue color */
+  margin-bottom: 5px;
+}
+
+.home-content select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: white;
+}
+
+/* Label for dropdown */
+.home-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0033cc; /* Dark blue color */
+}
+
+/* Logo in the top-left corner */
+.home-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px; /* Increased width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styles */
+.home-content button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.home-content button:hover {
+  background-color: #0056b3;
+}

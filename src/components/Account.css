@@ -1,0 +1,166 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #003366; /* Dark blue background */
+  color: white; /* White text color for contrast */
+}
+
+/* Synchrony logo styling */
+.synchrony-logo {
+  position: absolute;
+  top: 10px; /* Adjust position from top as needed */
+  left: 10px; /* Adjust position from left as needed */
+  width: 100px; /* Adjust width as needed */
+}
+
+/* Container styles */
+.account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Content box styling */
+.account-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust width here */
+  text-align: left;
+}
+
+/* Header styling for logo and details */
+.account-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Margin below the header */
+}
+
+/* Logo styling */
+.logo {
+  width: 50px;
+  margin-right: 20px; /* Space between logo and vertical line */
+}
+
+/* Vertical line */
+.vertical-line {
+  width: 1px;
+  height: 60px; /* Adjust height as needed */
+  background-color: #ccc; /* Color of the vertical line */
+  margin-right: 20px; /* Space between vertical line and account details */
+}
+
+/* Account details styling */
+.account-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-details h3 {
+  margin: 0;
+}
+
+.account-details p {
+  margin: 5px 0;
+  color: #333; /* Dark gray color for better readability */
+}
+
+/* Message styling */
+.status-message-container {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Increased padding */
+  background-color: #d1e7dd; /* Lighter green background */
+  border: 1px solid #b6d8b9; /* Slightly darker green border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between status message and card info */
+}
+
+.status-message {
+  font-size: 14px; /* Adjusted font size */
+  color: #155724; /* Dark green text color */
+  text-align: center;
+  margin-left: 10px; /* Space between tick mark and text */
+}
+
+/* Tick mark styling */
+.status-message-container::before {
+  content: '✔'; /* Tick mark character */
+  font-size: 16px; /* Size of the tick mark */
+  color: #28a745; /* Green color for the tick mark */
+}
+
+/* Card Image and Account Info Container */
+.card-and-info-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the container */
+  margin-bottom: 60px; /* Double the previous margin-bottom */
+}
+
+/* Card Image Container */
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 60px; /* Double the previous margin-right */
+}
+
+.card-image {
+  width: 120px; /* Adjust width here */
+}
+
+/* Account Info Styling */
+.account-info {
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Account Stats Styling */
+.account-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Info Item Styling */
+.info-item {
+  margin-bottom: 30px; /* Double the previous margin-bottom for spacing between items */
+  display: flex;
+  flex-direction: column; /* Stack label and value vertically */
+  align-items: flex-start;
+}
+
+/* Specific styling for info item labels */
+.info-item .info-label {
+  color: darkblue; /* Dark blue color for the label text */
+  font-weight: bold;
+}
+
+/* Specific styling for info item amounts */
+.info-item p,
+.info-item span {
+  color: #333; /* Dark gray color for amounts and dates */
+  margin: 0; /* Remove margin for amount */
+  font-weight: normal; /* Remove boldness */
+}
+
+/* Amazon and TJX store card styling */
+.store-card {
+  color: #333; /* Dark gray color for store card text */
+  font-weight: bold; /* Ensure bold text for card name */
+}
+
+/* Button styling */
+.account-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}

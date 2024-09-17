@@ -1,0 +1,73 @@
+/* Container styles to center the content */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Background color for login page */
+  position: relative; /* Position relative to allow positioning of logos */
+}
+
+/* Content box styling */
+.login-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  position: relative; /* Position relative for correct alignment */
+}
+
+/* Input and button styling */
+.login-content input,
+.login-content button {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Button styling */
+.login-content button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.login-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Absolute positioning for top-left alignment */
+  top: 20px; /* Adjust position from top */
+  left: 20px; /* Adjust position from left */
+}
+
+/* Logo styling */
+.logo {
+  height: 80px; /* Increased height for logos */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logos */
+  object-fit: contain; /* Ensure logos fit within their container */
+}
+
+/* Vertical line styling */
+.vertical-line {
+  height: 80px; /* Same height as the logos */
+  width: 1px; /* Thin vertical line */
+  background-color: #ccc; /* Color of the vertical line */
+  margin: 0 10px; /* Space around the line */
+}
+
+/* Heading styling */
+.login-content h2 {
+  font-weight: normal; /* Remove boldness */
+  color: black; /* Set color to black */
+}
