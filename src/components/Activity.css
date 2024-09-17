@@ -1,33 +1,135 @@
 /* General styling for Activity page */
 .activity-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  /* Styling for Activity page header */
-  .activity-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Styling for activity logo */
-  .activity-logo {
-    width: 100px; /* Adjust width as needed */
-    margin-bottom: 10px;
-  }
-  
-  /* Styling for account ending */
-  .account-ending-container {
-    text-align: center; /* Center-align the text */
-  }
-  
-  .account-ending {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333; /* Dark gray color */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Styling for Activity page header */
+.activity-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Styling for activity logo */
+.activity-logo {
+  width: 100px; /* Adjust width as needed */
+  margin-bottom: 10px;
+}
+
+/* Styling for account ending */
+.account-ending-container {
+  text-align: center; /* Center-align the text */
+}
+
+.account-ending {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark gray color */
+}
+
+/* Styling for activity content */
+.activity-content {
+  background-color: gray; /* Background color for content */
+  padding: 10px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width */
+  margin-top: 20px; /* Space above content */
+}
+
+/* Styling for posted message */
+.posted {
+  font-size: 16px;
+  color: white; /* White text color for contrast */
+  margin: 0; /* Remove default margins */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 10px; /* Space below "Posted" */
+}
+
+/* Container for attributes and details under "Posted" */
+.details-container {
+  background-color: white; /* White background color for details */
+  padding: 10px; /* Padding for details */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Container for attribute labels and details */
+.attributes-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Adjust column sizes */
+  margin-bottom: 10px; /* Space below the labels */
+  background-color: #f8f8f8; /* Light gray background for the labels */
+  padding: 5px; /* Padding for better spacing */
+}
+
+/* Styling for each attribute label */
+.attribute-label {
+  font-weight: bold; /* Bold font for labels */
+  color: #333; /* Dark gray color for better readability */
+  text-align: left; /* Align label text to the left */
+}
+
+/* Styling for each detail item */
+.detail-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Align with attribute columns */
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Styling for individual detail elements */
+.detail-date, .detail-description, .detail-amount {
+  margin: 0; /* Remove default margins */
+  padding: 5px; /* Padding for better spacing */
+  color: #333; /* Dark gray text color for better readability */
+}
+
+/* Ensure the "Date" and "Description" align to the left */
+.detail-date {
+  text-align: left; /* Align date text to the left */
+}
+
+.detail-description {
+  text-align: left; /* Align description text to the left */
+}
+
+/* Align the "Amount" to the right */
+.detail-amount {
+  text-align: right; /* Align amount text to the right */
+}
+/* Styling for the amount container */
+.detail-amount {
+  text-align: right; /* Aligns content to the right */
+  display: flex; /* Use flexbox to align tick mark and amount */
+  justify-content: flex-end; /* Align contents to the right */
+  align-items: center; /* Vertically center contents */
+  gap: 5px; /* Space between tick mark and amount */
+}
+
+/* Styling for the tick mark */
+.tick-mark {
+  color: green; /* Green color for the tick mark */
+  font-size: 16px; /* Adjust size as needed */
+}
+/* Styling for the Back button */
+.back-button {
+  margin-bottom: 20px; /* Space below the button */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
