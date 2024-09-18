@@ -48,6 +48,7 @@ module.exports = defineConfig({
     reporterOptions: {
     reportDir: 'cypress/reports',
     reportFilename: `cypress-report-${new Date().toISOString().replace(/[:.]/g, '-')}`,
+    overwrite: false,
      html: true,
      json: false,
     },

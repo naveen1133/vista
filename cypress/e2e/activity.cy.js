@@ -1,4 +1,4 @@
-describe('report to check vista dashboard', () => {
+describe('report to check activity page', () => {
   const thresholds = {
     performance: 0,
     accessibility: 50,
@@ -24,7 +24,7 @@ describe('report to check vista dashboard', () => {
     return clients[Math.floor(Math.random() * clients.length)];
   };
 
-  it('should generate report to check vista dashboard', () => {
+  it('should generate report to check activity page', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
       return false;
     });
@@ -37,9 +37,12 @@ describe('report to check vista dashboard', () => {
     cy.get('input[placeholder="Password"]').type(client.password);
     cy.get('button').contains('Secure Login').click();
 
-    cy.wait(2000); 
+    cy.wait(2000);
+    cy.get('button').contains('Activity').click();
+    cy.wait(2000);
+
     cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig, {
-      filename: 'vista-dashboard-report.html',
+      filename: 'activity-page-report.html',
     });
   });
 });
