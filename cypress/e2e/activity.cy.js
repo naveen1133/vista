@@ -1,9 +1,10 @@
 describe('report to check activity page', () => {
   const thresholds = {
-    performance: 0,
-    accessibility: 50,
-    'best-practices': 50,
-    seo: 50,
+    performance: 90,
+    accessibility: 90,
+    'best-practices': 85,
+    seo: 85,
+    pwa: 75,
   };
 
   const lighthouseOptions = {

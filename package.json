@@ -20,9 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "posttest": "rm -rf cypress/reports/assets",
-  "test:parallel": "concurrently \"cypress run --browser chrome --spec 'cypress/e2e/vista.cy.js'\" \"cypress run --browser chrome --spec 'cypress/e2e/activity.cy.js'\""
-
-
+    "test:parallel": "concurrently \"cypress run --browser chrome --spec 'cypress/e2e/vista.cy.js'\" \"cypress run --browser chrome --spec 'cypress/e2e/activity.cy.js'\""
   },
   "eslintConfig": {
     "extends": [

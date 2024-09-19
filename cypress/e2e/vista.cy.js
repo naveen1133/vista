@@ -1,9 +1,10 @@
 describe('report to check vista dashboard', () => {
   const thresholds = {
-    performance: 0,
-    accessibility: 50,
-    'best-practices': 50,
-    seo: 50,
+    performance: 80,
+    accessibility: 90,
+    'best-practices': 85,
+    seo: 85,
+    pwa: 75,
   };
 
   const lighthouseOptions = {
@@ -37,7 +38,8 @@ describe('report to check vista dashboard', () => {
     cy.get('input[placeholder="Password"]').type(client.password);
     cy.get('button').contains('Secure Login').click();
 
-    cy.wait(2000); 
+    cy.wait(2000);
+
     cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig, {
       filename: 'vista-dashboard-report.html',
     });
