@@ -40,8 +40,6 @@ describe('report to check vista dashboard', () => {
 
     cy.wait(2000);
 
-    cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig, {
-      filename: 'vista-dashboard-report.html',
-    });
+    cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now
   });
 });

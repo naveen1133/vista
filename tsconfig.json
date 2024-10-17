@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "types": ["node", "cypress"] // Include Cypress types
+    },
+    "include": [
+      "cypress/**/*.ts",
+      "cypress/support/**/*.ts", // Include support directory for custom commands
+      "cypress/support/**/*.d.ts" // Include the custom type definition file
+, "cypress/e2e/vista.cy.js"    ]
+  }
+  
+  
