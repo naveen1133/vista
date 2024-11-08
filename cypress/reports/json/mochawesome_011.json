@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-07T06:23:28.203Z",
+    "end": "2024-11-07T06:23:37.198Z",
+    "duration": 8995,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "27102204-882a-465c-bb62-81cfcd20a84c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e27ef9e-bb4b-479e-a948-06c100088f12",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 6252,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "5e39e2d5-2df4-4664-817f-7fe3475fd6b2",
+              "parentUUID": "5e27ef9e-bb4b-479e-a948-06c100088f12",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e39e2d5-2df4-4664-817f-7fe3475fd6b2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/json",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

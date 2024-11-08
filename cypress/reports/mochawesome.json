@@ -1,0 +1,1100 @@
+{
+  "stats": {
+    "suites": 18,
+    "tests": 18,
+    "passes": 16,
+    "pending": 0,
+    "failures": 2,
+    "testsRegistered": 18,
+    "passPercent": 88.88888888888889,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-11-07T06:04:52.543Z",
+    "end": "2024-11-08T05:00:47.591Z",
+    "duration": 82555048
+  },
+  "results": [
+    {
+      "uuid": "62db53c5-89f0-483f-a710-562fedc8cbf6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59529227-ab8e-450c-ae14-65cf6324e87f",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 6052,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "c6f009f8-b8e3-4227-9753-56e55f4c7f17",
+              "parentUUID": "59529227-ab8e-450c-ae14-65cf6324e87f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6f009f8-b8e3-4227-9753-56e55f4c7f17"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6052,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dc16b151-50fa-44b5-abd0-d4e868a7b4ba",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6dde3866-581f-4b78-8a98-1b12afc1e16a",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3760,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "3ebc4b25-cf08-48f8-804e-79d66e853ea9",
+              "parentUUID": "6dde3866-581f-4b78-8a98-1b12afc1e16a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3ebc4b25-cf08-48f8-804e-79d66e853ea9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3760,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "21c4472a-9232-4d80-a96f-45dfcd87c0a4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d34938fc-6b55-42e3-8d2e-223bb0c32b2c",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 5776,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "fb57b513-e161-4631-b792-075b2eef5855",
+              "parentUUID": "d34938fc-6b55-42e3-8d2e-223bb0c32b2c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb57b513-e161-4631-b792-075b2eef5855"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5776,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "62abcdba-5702-472e-9cf0-bd5f142ac7ce",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "83fe5406-504f-4b0b-acef-0ca0d283dcba",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3668,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "627c7358-5e08-457c-a110-12ef835a39e5",
+              "parentUUID": "83fe5406-504f-4b0b-acef-0ca0d283dcba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "627c7358-5e08-457c-a110-12ef835a39e5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3668,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f0278f3c-032c-43bd-8271-d08054711098",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "efd5f23b-ed85-45ee-b520-bfe237803ddb",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 5856,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "427008ac-ac2c-4176-abf0-301b2b4f6a5c",
+              "parentUUID": "efd5f23b-ed85-45ee-b520-bfe237803ddb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "427008ac-ac2c-4176-abf0-301b2b4f6a5c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5856,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c0fee5b5-138c-4a47-ab18-8ddeb892740c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b878a03d-8c1f-42b8-a1bd-627b424f8c21",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3851,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "891a8589-237a-4bef-9d5e-f05a4e1399a6",
+              "parentUUID": "b878a03d-8c1f-42b8-a1bd-627b424f8c21",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "891a8589-237a-4bef-9d5e-f05a4e1399a6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3851,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7956e8f9-8ae0-4611-9afe-9050b8dcf14a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3212eee-213c-4be7-b026-c25c74c87d0d",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 5648,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "335f4570-417f-4d23-b2ab-6190d81f124b",
+              "parentUUID": "a3212eee-213c-4be7-b026-c25c74c87d0d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "335f4570-417f-4d23-b2ab-6190d81f124b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "181d8fbf-adf7-412c-ba14-a4e0d314eadc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c400342-df5d-49f3-843e-136c6a03c557",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3831,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "62ccc5fe-e7fc-49c4-b58a-55c08f43ea44",
+              "parentUUID": "5c400342-df5d-49f3-843e-136c6a03c557",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62ccc5fe-e7fc-49c4-b58a-55c08f43ea44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3831,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7e0430e5-edac-491c-b4c7-100cb7abaf7c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9e096bca-39c0-48b6-81bf-a18ae898f5ee",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 5897,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "c4dfcd8c-55b9-489d-89ac-9fc5100f4d25",
+              "parentUUID": "9e096bca-39c0-48b6-81bf-a18ae898f5ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c4dfcd8c-55b9-489d-89ac-9fc5100f4d25"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5897,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d0c1b5d6-b6c0-49fe-ba86-a9420f0b01ea",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d19cc90d-efd4-4400-9573-88b25b0d281e",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 4079,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "746c02c1-f691-446a-83fd-fc9cfc10b270",
+              "parentUUID": "d19cc90d-efd4-4400-9573-88b25b0d281e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "746c02c1-f691-446a-83fd-fc9cfc10b270"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4079,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "27102204-882a-465c-bb62-81cfcd20a84c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e27ef9e-bb4b-479e-a948-06c100088f12",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 6252,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "5e39e2d5-2df4-4664-817f-7fe3475fd6b2",
+              "parentUUID": "5e27ef9e-bb4b-479e-a948-06c100088f12",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e39e2d5-2df4-4664-817f-7fe3475fd6b2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8baa78e8-8e63-496f-8caa-30417a549a5d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d78a072-85cc-4af0-99f2-38c0fd4c7416",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 4116,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "30822924-b241-4e60-9fe1-e56fb2fbbc74",
+              "parentUUID": "6d78a072-85cc-4af0-99f2-38c0fd4c7416",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30822924-b241-4e60-9fe1-e56fb2fbbc74"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c2fcde47-7991-4612-9d70-50069ab4fdd4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f7dcde3f-6a31-4b8a-bd43-462c98a24c77",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 6350,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "9b3a1a05-4efd-4e59-a638-0fc97303741a",
+              "parentUUID": "f7dcde3f-6a31-4b8a-bd43-462c98a24c77",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9b3a1a05-4efd-4e59-a638-0fc97303741a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6350,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6c812c6d-23f2-4cee-a69c-b974995be60f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce574da5-7ad0-4417-92c4-52daec3aec5f",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3705,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {
+                "message": "CypressError: `cy.task('lighthouse')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nE:\\vista\\vista\\cypress.config.js\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('lighthouse')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nE:\\vista\\vista\\cypress.config.js\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:135168:72)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://vista/./node_modules/@cypress-audit/lighthouse/src/command-handler.js:46:0)",
+                "diff": null
+              },
+              "uuid": "055386e3-aa4b-4877-bd24-918aea772f09",
+              "parentUUID": "ce574da5-7ad0-4417-92c4-52daec3aec5f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "055386e3-aa4b-4877-bd24-918aea772f09"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ba2333c5-3202-47a5-b1fb-a32b799c1745",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2bdadab-5301-4130-9c5d-fc26c5f887a3",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 5819,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {
+                "message": "CypressError: `cy.task('lighthouse')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nE:\\vista\\vista\\cypress.config.js\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: `cy.task('lighthouse')` failed with the following error:\n\nThe 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()\n\nFix this in your setupNodeEvents method here:\nE:\\vista\\vista\\cypress.config.js\n\nhttps://on.cypress.io/api/task\n    at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:135168:72)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://vista/./node_modules/@cypress-audit/lighthouse/src/command-handler.js:46:0)",
+                "diff": null
+              },
+              "uuid": "ee826fd5-e64a-4227-8a80-5c9d3f399c20",
+              "parentUUID": "a2bdadab-5301-4130-9c5d-fc26c5f887a3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ee826fd5-e64a-4227-8a80-5c9d3f399c20"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5819,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "827aefbf-7ddd-49d3-a878-bcde24d51224",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "396228c5-ff62-4131-abe9-5fa83680ce2b",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 4054,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\n//cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "b2a32a20-3273-441f-b15f-4e091f19fe0c",
+              "parentUUID": "396228c5-ff62-4131-abe9-5fa83680ce2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b2a32a20-3273-441f-b15f-4e091f19fe0c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4054,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4cb7ca5f-b14b-4357-8483-25edf330371c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\activity.cy.js",
+      "file": "cypress\\e2e\\activity.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "407d3260-8857-4d3b-bed8-c70ba694178a",
+          "title": "report to check activity page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check activity page",
+              "fullTitle": "report to check activity page should generate report to check activity page",
+              "timedOut": null,
+              "duration": 6257,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.get('button').contains('Activity').click();\ncy.wait(2000);\n//cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);",
+              "err": {},
+              "uuid": "37a9422f-4456-4c10-94b0-5cfb21e9a421",
+              "parentUUID": "407d3260-8857-4d3b-bed8-c70ba694178a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "37a9422f-4456-4c10-94b0-5cfb21e9a421"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6257,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "119c18cf-6ec6-48b8-acdf-0d59d11bf324",
+      "title": "",
+      "fullFile": "cypress\\e2e\\vista.cy.js",
+      "file": "cypress\\e2e\\vista.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7a3e4293-9df8-444b-985e-605040537771",
+          "title": "report to check vista dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should generate report to check vista dashboard",
+              "fullTitle": "report to check vista dashboard should generate report to check vista dashboard",
+              "timedOut": null,
+              "duration": 3953,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit('http://localhost:3000/');\nconst client = getClientCredentials();\ncy.get('select').select(client.name);\ncy.get('button').contains('Login').click();\ncy.get('input[placeholder=\"User ID\"]').type(client.username);\ncy.get('input[placeholder=\"Password\"]').type(client.password);\ncy.get('button').contains('Secure Login').click();\ncy.wait(2000);\ncy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig); // This should work now",
+              "err": {},
+              "uuid": "a6d7ffa9-21e6-47d5-bec2-d8c64e87d866",
+              "parentUUID": "7a3e4293-9df8-444b-985e-605040537771",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a6d7ffa9-21e6-47d5-bec2-d8c64e87d866"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3953,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/json",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

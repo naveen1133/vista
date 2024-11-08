@@ -1,17 +1,27 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "strict": true,
-      "esModuleInterop": true,
-      "moduleResolution": "node",
-      "types": ["node", "cypress"] // Include Cypress types
+      "target": "es6",                              // Specify ECMAScript target version
+      "lib": ["es6", "dom"],                        // Specify library files to include
+      "types": ["cypress"],                         // Include Cypress types
+      "allowJs": true,                              // Allow JavaScript files to be compiled
+      "checkJs": false,                             // Disallow errors for JavaScript files
+      "jsx": "react",                               // Specify JSX code generation
+      "strict": true,                               // Enable all strict type-checking options
+      "esModuleInterop": true,                      // Enable compatibility with ES modules
+      "skipLibCheck": true,                         // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true,     // Disallow inconsistent casing in filenames
+      "moduleResolution": "node",                   // Resolve modules like Node.js
+      "noImplicitAny": false                        // Disable warnings for implicit 'any' types
     },
     "include": [
-      "cypress/**/*.ts",
-      "cypress/support/**/*.ts", // Include support directory for custom commands
-      "cypress/support/**/*.d.ts" // Include the custom type definition file
-, "cypress/e2e/vista.cy.js"    ]
+      "**/*.ts",                                    // Include all .ts files in the project
+      "**/*.tsx",                                   // Include all .tsx files
+      "cypress/**/*.ts",                            // Include Cypress-related TypeScript files
+      "cypress/**/*.js"                             // Include Cypress-related JavaScript files if needed
+    ],
+    "exclude": [
+      "node_modules",                               // Exclude node_modules
+      "dist"                                        // Exclude dist directory if it exists
+    ]
   }
-  
   

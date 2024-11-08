@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2024-11-08T15:03:50.090Z",
+  "duration": 6522,
+  "file": "cypress\\e2e\\vista.cy.js"
+}
