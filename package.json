@@ -22,7 +22,7 @@
     "posttest": "rm -rf cypress/reports/assets cypress/cache",
     "cy:backtoback": "cypress run --reporter cypress-mochawesome-reporter && npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/output.json --timestamp isoDateTime --overwrite false --inline",
     "cy:run": "cypress run",
-    "cy:run:parallel": "cypress-parallel -s 'cypress/e2e/**/*.cy.js' -t 2 --reporter 'cypress-mochawesome-reporter' --config cypressParallel=true",
+    "cy:run:parallel": "cypress-parallel -s cy:run -d 'cypress/e2e/**/*.cy.js' -t 2 -r 'cypress-mochawesome-reporter' -o cypressParallel=true",
     "cy:report": "npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/output.json",
     "test:report": "npx marge cypress/reports/output.json --timestamp isoDateTime --overwrite false --reportDir cypress/reports --inline",
     "test:parallel": "npm run cy:run:parallel && npm run cy:report && npm run test:report",

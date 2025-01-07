@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2024-11-08T15:03:51.209Z",
-  "duration": 7979,
+  "start": "2025-01-07T09:56:27.793Z",
+  "duration": 11403,
   "file": "cypress\\e2e\\activity.cy.js"
 }

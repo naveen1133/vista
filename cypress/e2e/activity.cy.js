@@ -42,6 +42,6 @@ describe('report to check activity page', () => {
       cy.get('button').contains('Activity').click();
       cy.wait(2000);
   
-      //cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);
+      cy.lighthouse(thresholds, lighthouseOptions, lighthouseConfig);
     });
   });

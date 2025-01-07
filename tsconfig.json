@@ -1,27 +1,28 @@
 {
-    "compilerOptions": {
-      "target": "es6",                              // Specify ECMAScript target version
-      "lib": ["es6", "dom"],                        // Specify library files to include
-      "types": ["cypress"],                         // Include Cypress types
-      "allowJs": true,                              // Allow JavaScript files to be compiled
-      "checkJs": false,                             // Disallow errors for JavaScript files
-      "jsx": "react",                               // Specify JSX code generation
-      "strict": true,                               // Enable all strict type-checking options
-      "esModuleInterop": true,                      // Enable compatibility with ES modules
-      "skipLibCheck": true,                         // Skip type checking of declaration files
-      "forceConsistentCasingInFileNames": true,     // Disallow inconsistent casing in filenames
-      "moduleResolution": "node",                   // Resolve modules like Node.js
-      "noImplicitAny": false                        // Disable warnings for implicit 'any' types
-    },
-    "include": [
-      "**/*.ts",                                    // Include all .ts files in the project
-      "**/*.tsx",                                   // Include all .tsx files
-      "cypress/**/*.ts",                            // Include Cypress-related TypeScript files
-      "cypress/**/*.js"                             // Include Cypress-related JavaScript files if needed
-    ],
-    "exclude": [
-      "node_modules",                               // Exclude node_modules
-      "dist"                                        // Exclude dist directory if it exists
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["cypress"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "outDir": "./dist"
+  },
+  "include": [
+    "cypress/**/*.ts",
+    "cypress/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cypress/**/*.js",
+    "cypress/reports",
+    "**/*.json"
+  ]
+}

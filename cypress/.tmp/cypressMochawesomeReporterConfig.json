@@ -1,13 +1,13 @@
 {
-  "jsonDir": "E:\\vista\\vista\\cypress\\reports\\html\\.jsons",
+  "jsonDir": "E:\\cypress\\vista\\cypress\\reports\\html\\.jsons",
   "reporterOptions": {
     "cypressParallel": true,
-    "reportDir": "E:\\vista\\vista\\cypress\\reports\\html",
+    "reportDir": "E:\\cypress\\vista\\cypress\\reports\\html",
     "overwrite": false
   },
-  "screenshotsDir": "E:\\vista\\vista\\cypress\\screenshots",
-  "videosFolder": "E:\\vista\\vista\\cypress\\videos",
-  "outputDir": "E:\\vista\\vista\\cypress\\reports\\html",
+  "screenshotsDir": "E:\\cypress\\vista\\cypress\\screenshots",
+  "videosFolder": "E:\\cypress\\vista\\cypress\\videos",
+  "outputDir": "E:\\cypress\\vista\\cypress\\reports\\html",
   "configOutput": "cypress/.tmp/cypressMochawesomeReporterConfig.json",
   "removeJsonsFolderAfterMerge": false
 }

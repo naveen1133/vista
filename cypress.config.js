@@ -21,7 +21,6 @@ module.exports = defineConfig({
       let globalEndTime;
 
       on("before:run", async (details) => {
-        console.log("Override before:run");
         await beforeRunHook(details);
         globalStartTime = new Date();
         console.log(`Test suite started at: ${globalStartTime}`);
@@ -31,30 +30,24 @@ module.exports = defineConfig({
         globalEndTime = new Date();
         const totalExecutionTime = (globalEndTime - globalStartTime) / 1000; // Convert to seconds
         console.log(`Test suite ended at: ${globalEndTime}`);
-        console.log(
-          `Total execution time for all test files: ${totalExecutionTime.toFixed(3)} seconds`
-        );
+        console.log(`Total execution time for all test files: ${totalExecutionTime.toFixed(3)} seconds`);
 
-        // Directory for log files
         const logDirPath = path.join(__dirname, "cypress", "reports", "timings");
         if (!fs.existsSync(logDirPath)) {
           fs.mkdirSync(logDirPath, { recursive: true });
         }
 
-        // Create log file name with timestamp
         const logFileName = `test-suite-${new Date()
           .toISOString()
           .replace(/[:.]/g, "-")}.json`;
         const logFilePath = path.join(logDirPath, logFileName);
 
-        // Prepare log data
         const logData = {
           startTime: globalStartTime.toISOString(),
           endTime: globalEndTime.toISOString(),
           totalExecutionTime: `${totalExecutionTime.toFixed(3)} seconds`,
         };
 
-        // Write to JSON file
         fs.writeFileSync(logFilePath, JSON.stringify(logData, null, 2), "utf8");
         console.log(`Execution timings saved to ${logFilePath}`);
       });
@@ -86,7 +79,6 @@ module.exports = defineConfig({
         }),
       });
 
-      // Return the configuration with additional properties
       return {
         ...config,
         specPattern: "cypress/e2e/**/*.cy.{js,cjs,jsx,ts,tsx}",
