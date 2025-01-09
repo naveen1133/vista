@@ -20,6 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "posttest": "rm -rf cypress/reports/assets cypress/cache",
+       "lighthouse:vista": "lighthouse https://your-vista-page-url --output html --output-path reports/vista.html",
+    "lighthouse:activity": "lighthouse https://your-activity-page-url --output html --output-path reports/activity.html",
     "cy:backtoback": "cypress run --reporter cypress-mochawesome-reporter && npx mochawesome-merge cypress/reports/.jsons/*.json > cypress/reports/output.json --timestamp isoDateTime --overwrite false --inline",
     "cy:run": "cypress run",
     "cy:run:parallel": "cypress-parallel -s cy:run -d 'cypress/e2e/**/*.cy.js' -t 2 -r 'cypress-mochawesome-reporter' -o cypressParallel=true",
